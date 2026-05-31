@@ -28,7 +28,7 @@ builder.Services.AddSingleton(new GameSettings
     ComboWindowMs      = 3000,
     MaxComboMultiplier = 5,
     ComboMultiplier    = 1,
-    MaxFoodItems       = 2,
+    MaxFoodItems       = 1,
     MaxPlayers         = 1
 });
 
