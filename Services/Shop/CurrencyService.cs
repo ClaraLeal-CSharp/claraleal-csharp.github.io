@@ -8,14 +8,14 @@ namespace SnakeClaude.Services.Shop;
 
 /// <summary>
 /// Serviço de moeda Snake Bites.
-/// Regra de conversão: 50 pontos = 1 Snake Bite (arredondamento para baixo).
+/// Regra de conversão: 25 pontos = 1 Snake Bite (arredondamento para baixo).
 /// </summary>
 public class CurrencyService(IJSRuntime js) : ICurrencyService
 {
     private readonly IJSRuntime _js = js;
     private readonly PlayerWallet _wallet = new();
 
-    private const int PointsPerBite = 50;
+    private const int PointsPerBite = 25;
     private const string StorageKey = "snakeclaude:wallet";
 
     public int Balance => _wallet.Balance;
